@@ -39,7 +39,7 @@ int main(int argc, const char * argv[]) {
     // Simulate: < final_state | circuit | init_state >
     
     float aR, aI;
-    simulate_all_paths (circuit, init_state, final_state, aR, aI);
+    simulate_all_paths_opt (circuit, init_state, final_state, aR, aI);
     
     printf ("< %d | U | %d > = %.6f + i %.6f\n", final_state, init_state, aR, aI);
     
